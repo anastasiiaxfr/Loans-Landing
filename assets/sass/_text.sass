@@ -4,6 +4,7 @@
     
 h1, .h1
     margin-top: 0
+    margin-bottom: $gap1
     +ft(55, 55, 700)
     +maw($md)
         +ft(37, 37*1.2, 700)
@@ -32,7 +33,11 @@ h3, .h3
 
 h1, h2, h3, h4, h5, h6
     font-family: $ffHeading, $ffBack
+    color: $main
 
 
 p
     +ft(14, 14*1.35, 400)
+
+hgroup
+    margin-bottom: $gap4

@@ -14,17 +14,16 @@
 		color: $white
 		outline: none
 		box-shadow: none
-
 	&-bd
 		@extend .btn
 		min-width: 150px
 		height: 50px
 		border: 2px solid $main
-		color: $main
 		background-color: transparent
+		color: $main	
+		cursor: pointer
 		&:hover, &:active, &:focus
-			color: $main
-			background-color: transparent
+			+theme(main)
 
 
 

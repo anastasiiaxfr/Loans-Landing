@@ -4,13 +4,11 @@
       <NuxtLink to="/" class="logo">
         <img :src="logoImg" alt="Logo" />
       </NuxtLink>
-
       <nav class="header-menu">
         <NuxtLink v-for="(item, index) in menu" :key="index" :to="item.to">
           {{ item.label }}
         </NuxtLink>
       </nav>
-
       <div class="header-btns">
         <NuxtLink class="btn" to="#contacts">Contact us</NuxtLink>
         <button type="button" class="header-toggler" @click="toggleDrawer">

@@ -1,0 +1,10 @@
+.row
+    &_1
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: var(--gapSection)
+        align-items: center
+    +maw($md)
+        &_1
+            grid-template-columns: 1fr
+            text-align: center
