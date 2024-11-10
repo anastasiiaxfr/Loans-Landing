@@ -29,7 +29,7 @@
               <nav class="contacts">
                 <p v-for="(i, ind) in contacts" :key="ind">
                   <a href="i.url">
-                    <NuxtImg :src="i.icon" :alt="i.label" width="24" height="24" /><span v-html="i.label"></span>
+                    <img :src="i.icon" :alt="i.label" width="24" height="24" /><span v-html="i.label"></span>
                   </a>
                 </p>
               </nav>
@@ -41,7 +41,7 @@
     <div class="footer-btm">
       <div class="container">
         <nav>
-          <NuxtLink to="/terms">Terms </NuxtLink>
+          <NuxtLink to="/terms">Terms and Conditions </NuxtLink>
           <NuxtLink to="/policy">Privacy Policy </NuxtLink>
           <NuxtLink to="/cookie">Cookie Policy </NuxtLink>
         </nav>
@@ -52,6 +52,9 @@
 
 <script setup>
 import logoImg from "~/assets/img/logo-w.svg";
+import i1 from "~/assets/img/icon/s5.svg";
+import i2 from "~/assets/img/icon/s6.svg";
+import i3 from "~/assets/img/icon/s7.svg";
 import Soc from "~/components/_soc.vue";
 
 const nav = [
@@ -63,17 +66,17 @@ const nav = [
 
 const contacts = [
   {
-    icon: "/icon/s5.svg",
+    icon: i1,
     url: "tel:+919999999999",
     label: "+91 99999 99999",
   },
   {
-    icon: "/icon/s6.svg",
+    icon: i2,
     url: "mailto:xyzfh5@gmail.com",
     label: "xyzfh5@gmail.com",
   },
   {
-    icon: "/icon/s7.svg",
+    icon: i3,
     url: "/",
     label: "Address line-1 <br>Address line-2, <br>city, state-pin code.",
   },

@@ -13,32 +13,29 @@ a
 		box-shadow: none
 
 .page
-	&__wrapper
-		overflow: hidden
-	&__content
-		padding-top: var(--gapSection)
-		padding-bottom: var(--gapSection)
-	&__single
-		padding-top: var(--gapSection)
-		padding-bottom: var(--gapSection)
-		background: url('../images/bg/bg5.svg') no-repeat 100% 100% / contain
+	padding-top: var(--gapSection)
+	padding-bottom: var(--gapSection)
+	background: url('../images/bg/bg5.svg') no-repeat 100% 100% / contain
+	h1
+		+ft(55, 55*1.3, 800)
+	h2, h3, h4, h5, h6
+		margin-top: var(--gap4)
+		margin-bottom: var(--gap2)
+		text-transform: uppercase
+		text-align: left
+		+ft(22, 22*1.3, 800)
+	a
+		color: $main
+		text-decoration: underline
+		transition: $trs
+		&:hover
+			text-decoration: none
+	+maw($sm)
 		h1
-			+ft(55, 55*1.3, 800)
-		h2, h3, h4, h5, h6
-			margin-top: var(--gap4)
-			margin-bottom: var(--gap2)
-			text-transform: uppercase
-			text-align: left
-			+ft(22, 22*1.3, 800)
-		a
-			color: $main
-			text-decoration: underline
-			transition: $trs
-			&:hover
-				text-decoration: none
-		+maw($sm)
-			h1
-				+ft(27, 27*1.3, 800)
+			+ft(27, 27*1.3, 800)
+
+
+	
 
 .container
 	position: relative

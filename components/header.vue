@@ -12,7 +12,7 @@
       <div class="header-btns">
         <a class="btn" href="#about">Contact us</a>
         <button type="button" class="header-toggler" @click="toggleDrawer">
-          <NuxtImg src="/icon/menu.svg" alt="menu" width="24" height="24" />
+          <img :src="iconMenu" alt="menu" width="24" height="24" />
         </button>
       </div>
     </div>
@@ -23,7 +23,7 @@
         <img :src="logoImg" alt="Logo" />
       </NuxtLink>
       <button type="button" class="header-toggler" @click="toggleDrawer">
-        <NuxtImg src="/icon/close.svg" alt="close" width="24" height="24" />
+        <img :src="iconClose" alt="close" width="24" height="24" />
       </button>
     </div>
     <nav class="drawer-menu">
@@ -37,6 +37,8 @@
 
 <script setup>
 import logoImg from "~/assets/img/logo.svg";
+import iconMenu from "~/assets/img/icon/menu.svg";
+import iconClose from "~/assets/img/icon/close.svg";
 
 const isDrawerOpen = ref(false);
 

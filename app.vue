@@ -1,20 +1,12 @@
 <template>
-  <Header />
-  <Hero />
-  <Services />
-  <HowWorks />
-  <About />
-  <Footer />
+  <div>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </div>
 </template>
 
 <script setup lang="ts">
-import Header from "~/components/header.vue";
-import Footer from "~/components/footer.vue";
-import Hero from "~/components/home/hero.vue";
-import Services from "~/components/home/services.vue";
-import HowWorks from "~/components/home/how-works.vue";
-import About from "~/components/home/about.vue";
-
 useSeoMeta({
   title: "★Loans | Xforeal★",
   ogTitle: "My Amazing Nuxt + Sass Site",

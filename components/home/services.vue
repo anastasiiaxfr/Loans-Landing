@@ -4,7 +4,7 @@
       <h2 class="">Our Services</h2>
       <div class="cards">
         <article class="card" v-for="(card, ind) in services" :key="ind">
-          <NuxtImg :src="card.icon" width="64" height="64" />
+          <img :src="card.icon" width="64" height="64" />
           <div class="card-title">{{ card.title }}</div>
           <div class="card-desc">{{ card.desc }}</div>
           <a href="#about" class="btn-bd">{{ card.btn.label }}</a>
@@ -16,9 +16,13 @@
 </template>
 
 <script setup>
+import i1 from "~/assets/img/i1.svg";
+import i2 from "~/assets/img/i2.svg";
+import i3 from "~/assets/img/i3.svg";
+
 const services = [
   {
-    icon: "i1.svg",
+    icon: i1,
     title: "Personal loan",
     desc: "Personal loans provide borrowers with flexibility in how they use the funds.",
     btn: {
@@ -27,7 +31,7 @@ const services = [
     },
   },
   {
-    icon: "i2.svg",
+    icon: i2,
     title: "Business loan",
     desc: "Business Loan Services provide financial assistance to businesses for various purposes..",
     btn: {
@@ -36,7 +40,7 @@ const services = [
     },
   },
   {
-    icon: "i3.svg",
+    icon: i3,
     title: "Auto loan",
     desc: "Auto Loan Services provide financing options for individuals businesses to purchase a vehicle.",
     btn: {
