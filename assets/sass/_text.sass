@@ -48,3 +48,16 @@ hgroup
 .text
     &-center
         text-align: center
+
+.contacts
+    a
+        +flex(flex, center, flex-start, nowrap)
+        gap: $gap2
+
+.soc
+    +flex(flex, center, flex-start, nowrap)
+    gap: $gap1
+    a
+        transition: $trs
+        &:hover
+            transform: rotate(30deg)

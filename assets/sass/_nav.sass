@@ -101,7 +101,49 @@
 
 
 .footer
+	padding: $gap4 0
 	+theme(dark)
+	&-top
+		.container
+			display: flex
+			justify-content: space-between
+			grid-template-columns: 0.5fr 1fr
+			gap: $gap4
+			+maw($md)
+				flex-wrap: wrap
+				justify-content: center
+	&-btm
+		margin-top: $gap2
+		nav
+			display: flex
+			gap: $gap2
+			flex-wrap: wrap
+			a
+				@extend %a
+		+maw($md)
+			& *
+				justify-content: center
+
+	&-info
+		max-width: 400px
+	&-note
+		margin: $gap4 0
+	&-nav
+		display: grid
+		grid-template-columns: 1fr 1fr
+		gap: var(--gapSection)
+		.divider
+			+sz(50px, 2px)
+			background-color: $white
+			margin: $gap1 0 $gap2
+		ul
+			padding: 0
+			list-style-type: none
+			li
+				display: block
+			a
+				@extend %a
+				display: inline-block
 
 .logo
 	text-transform: uppercase
