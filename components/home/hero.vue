@@ -1,4 +1,3 @@
-import { NuxtLink } from '../../.nuxt/components';
 <template>
   <section class="section section_hero">
     <div class="container">

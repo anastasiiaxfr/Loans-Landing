@@ -16,13 +16,14 @@ h1, .h1
 
 h2, .h2
     +ft(48, 48*1, 700)
-    margin-bottom: var(--gap6)
+    margin-top: 0
+    margin-bottom: $gap4
     +maw($md)
         +ft(44, 44, 700)
     +maw($sm)
         +ft(32, 32, 700)
     +maw($xs)
-        +ft(24, 24, 700)
+        +ft(28, 28, 700)
     
 
 h3, .h3
@@ -41,3 +42,7 @@ p
 
 hgroup
     margin-bottom: $gap4
+
+.text
+    &-center
+        text-align: center
