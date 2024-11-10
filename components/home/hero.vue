@@ -12,9 +12,9 @@
               you need in a timely manner to meet your financial requirements.
             </p>
           </hgroup>
-          <NuxtLink class="btn-bd">
+          <a class="btn-bd" href="#about">
             Get started
-          </NuxtLink>
+          </a>
         </div>
         <div>
           <img :src="img" alt="Logo" />

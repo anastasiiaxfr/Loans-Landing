@@ -1,5 +1,5 @@
 <template>
-  <section class="section section_services">
+  <section class="section section_services" id="services">
     <div class="container text-center">
       <h2 class="">Our Services</h2>
       <div class="cards">
@@ -7,10 +7,10 @@
           <NuxtImg :src="card.icon" width="64" height="64" />
           <div class="card-title">{{ card.title }}</div>
           <div class="card-desc">{{ card.desc }}</div>
-          <NuxtLink class="btn-bd">{{ card.btn.label }}</NuxtLink>
+          <a href="#about" class="btn-bd">{{ card.btn.label }}</a>
         </article>
       </div>
-      <NuxtLink class="btn" to="#">View more</NuxtLink>
+      <a class="btn" href="#about">View more</a>
     </div>
   </section>
 </template>

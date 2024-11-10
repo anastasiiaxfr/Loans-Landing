@@ -5,12 +5,12 @@
         <img :src="logoImg" alt="Logo" />
       </NuxtLink>
       <nav class="header-menu">
-        <NuxtLink v-for="(item, index) in menu" :key="index" :to="item.to">
+        <a v-for="(item, index) in menu" :key="index" :href="item.url">
           {{ item.label }}
-        </NuxtLink>
+        </a>
       </nav>
       <div class="header-btns">
-        <NuxtLink class="btn" to="#contacts">Contact us</NuxtLink>
+        <a class="btn" href="#about">Contact us</a>
         <button type="button" class="header-toggler" @click="toggleDrawer">
           <NuxtImg src="/icon/menu.svg" alt="menu" width="24" height="24" />
         </button>
@@ -27,7 +27,7 @@
       </button>
     </div>
     <nav class="drawer-menu">
-      <NuxtLink v-for="(item, index) in menu" :key="index" :to="item.to" @click="toggleDrawer">
+      <NuxtLink v-for="(item, index) in menu" :key="index" :to="item.url" @click="toggleDrawer">
         {{ item.label }}
       </NuxtLink>
     </nav>
@@ -45,9 +45,9 @@ const toggleDrawer = () => {
 };
 
 const menu = [
-  { url: "#", label: "Home" },
-  { url: "#", label: "Services" },
-  { url: "#", label: "How we work?" },
-  { url: "#", label: "About Us" },
+  { url: "/", label: "Home" },
+  { url: "#services", label: "Services" },
+  { url: "#str", label: "How we work?" },
+  { url: "#about", label: "About Us" },
 ];
 </script>

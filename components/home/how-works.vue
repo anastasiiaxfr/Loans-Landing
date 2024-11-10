@@ -1,5 +1,5 @@
 <template>
-  <section class="section section_how-works">
+  <section class="section section_how-works" id="str">
     <div class="container">
       <hgroup class="text-center">
         <h2>

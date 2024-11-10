@@ -13,4 +13,9 @@ export default defineNuxtConfig({
     dir: "assets/img",
   },
   modules: ["@nuxt/image"],
+  router: {
+    options: {
+      scrollBehaviorType: "smooth",
+    },
+  },
 });
