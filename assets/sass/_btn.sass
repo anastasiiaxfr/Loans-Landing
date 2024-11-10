@@ -1,0 +1,33 @@
+.btn
+	+flex(inline-flex, center, center, nowrap)
+	height: 54px
+	min-width: 200px
+	padding: 8px 2em
+	border-radius: 16pc
+	+theme(main)
+	text-align: center
+	text-transform: capitalize
+	+ft(18, 18, 500)
+	transition: $trs
+	&:hover, &:active, &:focus
+		background-color: darken($main, 10%)
+		color: $white
+		outline: none
+		box-shadow: none
+
+	&-bd
+		@extend .btn
+		min-width: 150px
+		height: 50px
+		border: 2px solid $main
+		color: $main
+		background-color: transparent
+		&:hover, &:active, &:focus
+			color: $main
+			background-color: transparent
+
+
+
+
+			
+
